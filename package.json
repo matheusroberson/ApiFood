@@ -1,0 +1,20 @@
+{
+  "name": "ApiFood",
+  "version": "1.0.0",
+  "description": "Scraping RESTAPi to Open Food Facts",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server/server"
+  },
+  "repository": "https://github.com/matheusroberson/apifood.git",
+  "author": "Matheus Roberson <mroberson115@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "mongodb": "^4.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
