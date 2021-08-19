@@ -4,10 +4,13 @@ WORKDIR /app
 
 COPY . .
 
-ENV PORT=3000
+ENV USER=
+ENV PASS=
+ENV HOST=
+ENV DB=
 
 RUN yarn install
 
-EXPOSE $PORT
+EXPOSE 3000
 
 ENTRYPOINT ["node", "server/server.js"]
