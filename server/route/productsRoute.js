@@ -6,13 +6,21 @@ router.get("/", async (req, res) => {
   res.status(200).send("Fullstack Chanllage 2021");
 });
 
-router.get("/products/:code", async (req, res) => {});
+router.get("/products/:code", async (req, res) => {
+  try {
+    const { code } = req.params;
+    const product = await productsService.getOneProduct(code);
+    res.status(200).json(product);
+  } catch (err) {
+    console.error(err);
+  }
+});
 
 router.get("/products", async (req, res) => {
   try {
     const { page } = req.query;
     const products = await productsService.getProducts(page);
-    res.json(products);
+    res.status(200).json(products);
   } catch (err) {
     console.error(err);
   }
