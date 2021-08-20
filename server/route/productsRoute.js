@@ -2,6 +2,15 @@ const express = require("express");
 const router = express.Router();
 const productsService = require("../service/productsService");
 
+setInterval(() => {
+  const date = new Date();
+  const hour = date.getHours();
+
+  if (hour === "1") {
+    productsService.insertProducts();
+  }
+}, 5000);
+
 router.get("/", async (req, res) => {
   res.status(200).send("Fullstack Chanllage 2021");
 });

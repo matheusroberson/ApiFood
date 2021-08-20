@@ -7,3 +7,7 @@ exports.getProducts = (page) => {
 exports.getOneProduct = (code) => {
   return productsData.getOneProduct(code);
 };
+
+exports.insertProducts = () => {
+  productsData.insertProducts();
+};
