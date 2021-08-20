@@ -71,6 +71,7 @@ exports.insertProducts = async () => {
       };
     })
   ).then(async (datas) => {
+    await collection.deleteMany();
     await collection.insertMany(datas);
     await browser.close();
     client.close();
