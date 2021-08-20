@@ -4,7 +4,9 @@
   "description": "Scraping RESTAPi to Open Food Facts",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server/server"
+    "dev": "nodemon server/server",
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
   },
   "repository": "https://github.com/matheusroberson/apifood.git",
   "author": "Matheus Roberson <mroberson115@gmail.com>",
