@@ -37,10 +37,10 @@ docker build -t <imageName> .
 ```
 
 ```sh
-docker run -p <PORT>:3000 <imageName>:latest
+docker run -p 8000:3000 <imageName>:latest
 ```
 
-#### Após isto será possível requisitar a API em http://localhost:3000:PORT
+#### Após isto será possível requisitar a API em http://localhost:8000
 
 
 > Esse respositório é Fullstack Challenge 🏅 2021 by coodesh
