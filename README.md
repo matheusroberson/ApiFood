@@ -42,5 +42,10 @@ docker run -p 8000:3000 <imageName>:latest
 
 #### Após isto será possível requisitar a API em http://localhost:8000
 
+## Eu aprendi:
+- Scrapping em Puppeteer
+- Framework Express
+- Conceitos de Docker
+- Conceitos em Testes Unitários
+- & e muito mais
 
-> Esse respositório é Fullstack Challenge 🏅 2021 by coodesh
